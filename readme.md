@@ -29,7 +29,9 @@ Pastikan sudah terinstall:
 
 Instalasi:
 ```bash
-docker --version
-docker compose version
-git --version
+#Clone Repo
+git clone https://github.com/USERNAME/simple-app.git
+cd simple-app
+docker compose up -d --build
+
 
