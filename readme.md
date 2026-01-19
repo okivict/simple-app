@@ -20,13 +20,5 @@ Project ini bertujuan untuk mendemonstrasikan:
 ---
 
 ## Arsitektur
-Client
-↓
-Nginx (Reverse Proxy)
-↓
-Frontend (React)
-↓
-Backend (Node.js / Express)
-↓
-Database (SQLite)
+Client > Nginx (Reverse Proxy) > Frontend (React) > Backend (Node.js / Express) > Database (SQLite)
 
