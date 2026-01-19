@@ -22,3 +22,14 @@ Project ini bertujuan untuk mendemonstrasikan:
 ## Arsitektur
 Client > Nginx (Reverse Proxy) > Frontend (React) > Backend (Node.js / Express) > Database (SQLite)
 
+Pastikan sudah terinstall:
+- Docker >= 20.x
+- Docker Compose v2
+- Git
+
+Instalasi:
+```bash
+docker --version
+docker compose version
+git --version
+
