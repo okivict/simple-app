@@ -1,21 +1,32 @@
-# Docker Node + React + Nginx (Sample DevOps App)
+# Dockerized Node.js + React + Nginx
 
-Sample application to demonstrate:
-- Docker Compose
-- Nginx reverse proxy
-- Internal networking
-- Healthcheck per service
+Repositori ini berisi contoh aplikasi full-stack sederhana yang dikemas menggunakan Docker dan Docker Compose, dengan arsitektur mendekati praktik production.
 
-## Architecture
+---
 
-Client → Nginx → Backend / Frontend
+## Tujuan Project
 
-## Services
-- Backend: Node.js + Express
-- Frontend: React (Vite)
-- Reverse Proxy: Nginx
+Project ini bertujuan untuk mendemonstrasikan:
 
-## Run locally
+- Penggunaan Docker Compose untuk multi-service
+- Nginx sebagai reverse proxy
+- Networking internal antar container
+- Healthcheck di setiap service
+- Dependency antar service menggunakan `depends_on`
+- SQLite embedded di backend
+- File database dipersist (bukan di layer image)
+- Data tidak hilang walau container restart
 
-```bash
-docker compose up -d --build
+---
+
+## Arsitektur
+Client
+↓
+Nginx (Reverse Proxy)
+↓
+Frontend (React)
+↓
+Backend (Node.js / Express)
+↓
+Database (SQLite)
+
